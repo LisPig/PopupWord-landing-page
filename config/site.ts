@@ -1,54 +1,53 @@
 import { SiteConfig } from "@/types/siteConfig";
 import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
-const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
+const OPEN_SOURCE_URL = 'https://github.com/LisPig/PopupWord'
 
 const baseSiteConfig = {
-  name: "Landing page boilerplate",
+  name: "PopupWord",
   description:
-    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
-  url: "https://landingpage.weijunext.com",
-  ogImage: "https://landingpage.weijunext.com/og.png",
+    "A word memory learning tool with pop-up window design, whenever you open or browse the web, it will randomly display a word, so that you can practice word memory anytime and anywhere, thus helping you to constantly consolidate your vocabulary.",
+  url: "https://www.popupword.com",
+  //ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: '/',
-  keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
+  keywords: ["PopupWord", "popupword", "弹词", "popupword-web"],
   authors: [
     {
-      name: "weijunext",
-      url: "https://weijunext.com",
-      twitter: 'https://twitter.com/weijunext',
+      name: "popupword.com",
+      url: "https://PopupWord.com",
+      twitter: 'https://twitter.com/solo_oxy',
     }
   ],
-  creator: '@weijunext',
-  openSourceURL: 'https://github.com/weijunext/landing-page-boilerplate',
+  creator: '@solo_oxy',
+  openSourceURL: 'https://github.com/LisPig/PopupWord',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-  nextThemeColor: 'dark', // next-theme option: system | dark | light
+  nextThemeColor: 'light', // next-theme option: system | dark | light
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/logo.png",
   },
   headerLinks: [
-    { name: 'repo', href: OPEN_SOURCE_URL, icon: BsGithub },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
+    //{ name: 'repo', href: OPEN_SOURCE_URL, icon: BsGithub },
+    //{ name: 'twitter', href: "https://x.com/solo_oxy", icon: BsTwitterX },
+    // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
   footerLinks: [
-    { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
-    { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
-    { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
+    { name: 'email', href: "mailto:lowbyte1024@gmail.com", icon: MdEmail },
+    { name: 'twitter', href: "https://x.com/solo_oxy", icon: BsTwitterX },
+    { name: 'github', href: "https://github.com/LisPig/", icon: BsGithub },
+    // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
+    // { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
+    { name: 'weChat', href: "", icon: BsWechat }
   ],
   footerProducts: [
     { url: 'https://weijunext.com/', name: 'J实验室' },
     { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
-    { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
+    { url: 'https://landingpage.weijunext.com/', name: 'PopupWord' },
     { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
     { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
     { url: 'https://githubbio.com', name: 'Github Bio Generator' },

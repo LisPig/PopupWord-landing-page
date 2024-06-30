@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import CTAButton from "@/components/home/CTAButton";
+import ChromeButton from "@/components/home/ChromeButton";
 import { RoughNotation } from "react-rough-notation";
 
-const CTA = ({ locale, CTALocale }: { locale: any; CTALocale: any }) => {
+const CTA = ({ locale, CTALocale, ChromeLocale }: { locale: any; CTALocale: any; ChromeLocale: any }) => {
   return (
     <section className="flex flex-col justify-center max-w-[88%] items-center py-16 gap-12">
       <div className="flex flex-col text-center gap-4">
@@ -22,7 +23,10 @@ const CTA = ({ locale, CTALocale }: { locale: any; CTALocale: any }) => {
           {locale.description6}
         </p>
       </div>
-      <CTAButton locale={CTALocale} />
+      <div className="flex justify-center space-x-4 mt-8">
+        <CTAButton locale={CTALocale} />
+        <ChromeButton locale={ChromeLocale} />
+      </div>
     </section>
   );
 };

@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "title1": "Ship",
-    "title2": "Landing Page",
-    "title3": "Fast",
-    "description": "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour."
+    "title1": "PopupWord",
+    "title2": "弹词",
+    "title3": "",
+    "description": "This word memorization tool lets you practice memorizing at any time by displaying random words in a pop-up window each time a web page is viewed."
   },
   "SocialProof": {
     "maker": "makers ship fast"
@@ -13,10 +13,10 @@
   },
   "Pricing": {
     "title": "Pricing",
-    "title2": "Get unlimited access.",
-    "description": "The page you are currently viewing is an open-source, free boilerplate.",
-    "doYouLike": "Do you like this landing page boilerplate?",
-    "follow": "Follow my Twitter."
+    "title2": "",
+    "description": "",
+    "doYouLike": "",
+    "follow": ""
   },
   "WallOfLove": {
     "title": "Wall of Love",
@@ -29,15 +29,18 @@
     "description": "Here are some of the most frequently asked questions."
   },
   "CTA": {
-    "title": "Build Your Landing Page Now",
-    "description1": "Build",
-    "description2": "your landing page,",
-    "description3": "show",
-    "description4": "your product, and",
-    "description5": "start earning",
+    "title": "Start Using Now",
+    "description1": "Begin",
+    "description2": "your practice,",
+    "description3": "Repeat",
+    "description4": "Repeat, and repeat again,",
+    "description5": "until you can type fluently.",
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Get Boilerplate"
+    "title": "Android"
+  },
+  "ChromeButton": {
+    "title": "Browser Extension"
   }
 }

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { RocketIcon } from "lucide-react";
 import Link from "next/link";
+import { FaAndroid } from 'react-icons/fa';
 
 const CTAButton = ({ locale }: { locale: any }) => {
   return (
@@ -14,7 +14,7 @@ const CTAButton = ({ locale }: { locale: any }) => {
         className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white"
         aria-label="Get Boilerplate"
       >
-        <RocketIcon />
+        <FaAndroid />
         {locale.title}
       </Button>
     </Link>

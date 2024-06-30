@@ -2,8 +2,11 @@
 import { LineText } from "@/components/LineText";
 import CTAButton from "@/components/home/CTAButton";
 import { motion } from "framer-motion";
-
-const Hero = ({ locale, CTALocale }: { locale: any; CTALocale: any }) => {
+import dynamic from 'next/dynamic';
+const ChromeButton = dynamic(() => import('@/components/home/ChromeButton'), {
+  ssr: false, // 禁用服务器端渲染
+});
+const Hero = ({ locale, CTALocale, ChromeLocale }: { locale: any; CTALocale: any; ChromeLocale: any }) => {
   return (
     <>
       <motion.div
@@ -30,7 +33,10 @@ const Hero = ({ locale, CTALocale }: { locale: any; CTALocale: any }) => {
           </p>
         </section>
       </motion.div>
-      <CTAButton locale={CTALocale}></CTAButton>
+      <div className="flex justify-center space-x-4 mt-8">
+        <CTAButton locale={CTALocale}></CTAButton>
+        <ChromeButton locale={ChromeLocale}></ChromeButton>
+      </div>
     </>
   );
 };

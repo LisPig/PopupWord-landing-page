@@ -36,8 +36,8 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
-            aria-label="Landing Page Boilerplate"
-            title="Landing Page Boilerplate"
+            aria-label="PopupWord"
+            title="PopupWord"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
@@ -48,12 +48,12 @@ const Header = () => {
               height={32}
             />
             <span className="text-gray-950 dark:text-gray-300 hidden md:block">
-              Landing Page Boilerplate
+              PopupWord
             </span>
           </Link>
         </div>
 
-        <ul className="hidden items-center gap-6 md:flex">
+        {/* <ul className="hidden items-center gap-6 md:flex">
           {links.map((link) => (
             <li key={link.label}>
               <Link
@@ -66,7 +66,7 @@ const Header = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className="hidden md:flex items-center gap-x-6">
           <HeaderLinks />

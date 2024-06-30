@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "title1": "快速构建",
-    "title2": "落地页",
+    "title1": "PopupWord",
+    "title2": "弹词",
     "title3": "",
-    "description": "一个免费、开源且强大的落地页模板，适用于各种项目，让你在一个小时内搭建落地页。"
+    "description": "一款单词记忆学习工具采用弹窗式窗口设计，每当您打开或浏览网页时，它会随机显示一个单词，让您随时随地进行单词记忆练习，从而帮助您不断巩固词汇量。"
   },
   "SocialProof": {
     "maker": "制作者快速开发"
@@ -13,10 +13,10 @@
   },
   "Pricing": {
     "title": "定价",
-    "title2": "拥有无限访问权限",
-    "description": "你当前查看的页面是一个开源的、免费的模板。",
-    "doYouLike": "你喜欢这个落地页模板吗？",
-    "follow": "关注我的推特。"
+    "title2": "",
+    "description": "",
+    "doYouLike": "",
+    "follow": ""
   },
   "WallOfLove": {
     "title": "Wall of Love",
@@ -29,15 +29,18 @@
     "description": "这里有一些最常见的问题。"
   },
   "CTA": {
-    "title": "立即构建你的落地页",
-    "description1": "构建",
-    "description2": "你的落地页，",
-    "description3": "展示",
-    "description4": "你的产品，并开始",
-    "description5": "赚取收入",
+    "title": "立即使用",
+    "description1": "开始",
+    "description2": "你的练习，",
+    "description3": "重复",
+    "description4": "重复，再重复，",
+    "description5": "直到你可以流畅输入",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "获取模板"
+    "title": "Android"
+  },
+  "ChromeButton": {
+    "title": "Browser Extension"
   }
 }

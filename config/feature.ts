@@ -1,77 +1,51 @@
-import { LucideIcon, MagnetIcon } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
-import { BsGithub } from "react-icons/bs";
-import { FaToolbox } from "react-icons/fa";
+import { FaBook, FaHandPointer, FaUserSecret } from "react-icons/fa";
 import { FaEarthAsia, FaMobileScreenButton } from "react-icons/fa6";
 import { MdCloudUpload } from "react-icons/md";
 
 export const FEATURES_EN = [
   {
-    title: "Open Source Advantage",
-    content: "Completely free with a wealth of customization options.",
-    icon: BsGithub,
+    title: "Rich Vocabulary",
+    content: "Offers a diverse vocabulary library, including words for primary, middle, and high school, as well as levels 4 to 8, with continuous updates.",
+    icon: FaBook,
   },
   {
-    title: "Responsive Design",
-    content:
-      "Templates meticulously designed to ensure optimal display on any device.",
-    icon: FaMobileScreenButton,
+    title: "Hover Translation",
+    content: "Translate words with a hover action.",
+    icon: FaHandPointer,
   },
   {
-    title: "Easy Customization",
-    content:
-      "Effortlessly change colors, fonts, and layouts without any coding knowledge.",
-    icon: FaToolbox,
+    title: "Personal Word Bank",
+    content: "Encounter new words online? Translate and add them to your personal word bank for randomized review within the window.",
+    icon: FaUserSecret,
   },
   {
-    title: "SEO Optimized",
-    content:
-      "Templates built with search engine optimization in mind to enhance your website's discoverability.",
-    icon: MagnetIcon,
-  },
-  {
-    title: "One-Click Deployment",
-    content:
-      "Tightly integrated with leading web hosting services for instant website publishing.",
-    icon: MdCloudUpload,
-  },
-  {
-    title: "Globalization Support",
-    content:
-      "Supports multiple languages, making your website attractive to a global audience.",
+    title: "Global Language Support",
+    content: "Future support for multiple languages and multilingual word learning.",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_ZH = [
   {
-    title: "开源优势",
-    content: "完全免费，提供丰富的自定义选项。",
-    icon: BsGithub,
+    title: "词库丰富",
+    content: "提供丰富的词库,小初高、四六八级词汇,不断添加",
+    icon: FaBook,
   },
   {
-    title: "响应式设计",
-    content: "精心设计的模板，确保在任何设备上都能优化显示。",
-    icon: FaMobileScreenButton,
+    title: "划词翻译",
+    content: "划词翻译单词",
+    icon: FaHandPointer,
   },
   {
-    title: "易于定制",
-    content: "轻松更改颜色、字体和布局，无需任何编码知识。",
-    icon: FaToolbox,
-  },
-  {
-    title: "SEO优化",
-    content: "构建模板时考虑到搜索引擎优化，增强网站的可发现性。",
-    icon: MagnetIcon,
-  },
-  {
-    title: "一键部署",
-    content: "与领先的网站托管服务紧密集成，实现即时网站发布。",
-    icon: MdCloudUpload,
+    title: "个人词库",
+    content: "在网页遇到生词？通过划词翻译并加入你的个人词库,并在窗口随机",
+    icon: FaUserSecret,
   },
   {
     title: "全球化支持",
-    content: "支持多种语言，让你的网站吸引全球受众。",
+    content: "将支持多语种,多语言单词记忆",
     icon: FaEarthAsia,
   },
 ];
@@ -80,7 +54,7 @@ export const FEATURES_JA = [
   {
     title: "オープンソースの利点",
     content: "完全無料で、豊富なカスタマイズオプションを提供。",
-    icon: BsGithub,
+    icon: FaBook,
   },
   {
     title: "レスポンシブデザイン",
@@ -90,12 +64,12 @@ export const FEATURES_JA = [
   {
     title: "簡単カスタマイズ",
     content: "色、フォント、レイアウトをコーディング知識なしで簡単に変更可能。",
-    icon: FaToolbox,
+    icon: FaHandPointer,
   },
   {
     title: "SEO最適化",
     content: "ウェブサイトの発見可能性を高めるために、検索エンジン最適化を念頭に置いて構築されたテンプレート。",
-    icon: MagnetIcon,
+    icon: FaUserSecret,
   },
   {
     title: "ワンクリックデプロイメント",
@@ -113,7 +87,7 @@ export const FEATURES_AR = [
   {
     title: "ميزة المصدر المفتوح",
     content: "مجانية بالكامل مع ثروة من خيارات التخصيص.",
-    icon: BsGithub,
+    icon: FaBook,
   },
   {
     title: "تصميم متجاوب",
@@ -123,12 +97,12 @@ export const FEATURES_AR = [
   {
     title: "تخصيص سهل",
     content: "غير الألوان والخطوط والتخطيطات بسهولة دون الحاجة إلى معرفة بالبرمجة.",
-    icon: FaToolbox,
+    icon: FaHandPointer,
   },
   {
     title: "مُحسّن لمحركات البحث",
     content: "تم بناء القوالب مع مراعاة تحسين محركات البحث لتعزيز قابلية اكتشاف موقعك.",
-    icon: MagnetIcon,
+    icon: FaUserSecret,
   },
   {
     title: "نشر بنقرة واحدة",
@@ -146,7 +120,7 @@ export const FEATURES_ES = [
   {
     title: "Ventaja del Código Abierto",
     content: "Completamente gratuito con una riqueza de opciones de personalización.",
-    icon: BsGithub,
+    icon: FaBook,
   },
   {
     title: "Diseño Responsivo",
@@ -156,12 +130,12 @@ export const FEATURES_ES = [
   {
     title: "Personalización Fácil",
     content: "Cambia colores, fuentes y diseños sin esfuerzo y sin necesidad de conocimientos de codificación.",
-    icon: FaToolbox,
+    icon: FaHandPointer,
   },
   {
     title: "Optimizado para SEO",
     content: "Plantillas construidas con la optimización de motores de búsqueda en mente para mejorar la descubribilidad de tu sitio web.",
-    icon: MagnetIcon,
+    icon: FaUserSecret,
   },
   {
     title: "Despliegue con Un Clic",
@@ -179,7 +153,7 @@ export const FEATURES_RU = [
   {
     title: "Преимущество Открытого Исходного Кода",
     content: "Полностью бесплатно с широкими возможностями настройки.",
-    icon: BsGithub,
+    icon: FaBook,
   },
   {
     title: "Адаптивный Дизайн",
@@ -189,12 +163,12 @@ export const FEATURES_RU = [
   {
     title: "Легкая Настройка",
     content: "Легко изменяйте цвета, шрифты и макеты без знаний в области программирования.",
-    icon: FaToolbox,
+    icon: FaHandPointer,
   },
   {
     title: "Оптимизировано для Поисковых Систем",
     content: "Шаблоны созданы с учетом оптимизации для поисковых систем, чтобы повысить обнаруживаемость вашего сайта.",
-    icon: MagnetIcon,
+    icon: FaUserSecret,
   },
   {
     title: "Развертывание в Один Клик",
