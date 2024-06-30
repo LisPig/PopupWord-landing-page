@@ -5,7 +5,7 @@ import { FaAndroid } from 'react-icons/fa';
 const CTAButton = ({ locale }: { locale: any }) => {
   return (
     <Link
-      href="https://github.com/weijunext/landing-page-boilerplate"
+      href="https://github.com/LisPig/PopupWord"
       target="_blank"
       rel="noopener noreferrer nofollow"
     >

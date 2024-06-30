@@ -18,10 +18,10 @@ const links = [
     label: "Pricing",
     href: "#Pricing",
   },
-  {
-    label: "Wall of Love",
-    href: "#WallOfLove",
-  },
+  // {
+  //   label: "Wall of Love",
+  //   href: "#WallOfLove",
+  // },
   {
     label: "FAQ",
     href: "#FAQ",
@@ -102,7 +102,7 @@ const Header = () => {
                         height={32}
                       />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
-                        Landing Page
+                        Menu
                       </span>
                     </Link>
                   </div>

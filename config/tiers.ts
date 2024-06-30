@@ -24,7 +24,7 @@ export const TIERS_EN: Array<Tier> = [
     title: "Pro Plugin",
     href: siteConfig.authors[0].twitter || "#",
     description: "Unlock additional features and privileges.",
-    price: "$9.9/Month",
+    price: "$1.9/Month",
     features: [
       "All features included",
       "Unlimited favorites",
@@ -59,7 +59,7 @@ export const TIERS_ZH: Array<Tier> = [
     title: "插件-Pro",
     href: siteConfig.authors[0].twitter || "#",
     description: "获取更多权限和功能",
-    price: "$9.9/Month",
+    price: "￥9.9/Month",
     features: [
       "全部功能",
       "无限收藏",
