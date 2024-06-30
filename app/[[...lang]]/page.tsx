@@ -6,6 +6,8 @@ import VideoPlay from "@/components/home/MediaPast";
 import Pricing from "@/components/home/Pricing";
 import { defaultLocale, getDictionary } from "@/lib/i18n";
 
+
+
 export default async function LangHome({
   params: { lang },
 }: {
@@ -16,6 +18,7 @@ export default async function LangHome({
     lang && lang[0] && lang[0] !== "index" ? lang[0] : defaultLocale;
 
   const dict = await getDictionary(langName);
+
 
   return (
     <>

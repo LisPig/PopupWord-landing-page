@@ -7,7 +7,8 @@
     "postbuild": "next-sitemap",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
