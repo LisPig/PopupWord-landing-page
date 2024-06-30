@@ -63,13 +63,14 @@ export const siteConfig: SiteConfig = {
     url: baseSiteConfig.url,
     title: baseSiteConfig.name,
     description: baseSiteConfig.description,
+    images: [`${baseSiteConfig.url}/og.jpg`],
     siteName: baseSiteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
     title: baseSiteConfig.name,
     description: baseSiteConfig.description,
-    images: [`${baseSiteConfig.url}/og.png`],
+    images: [`${baseSiteConfig.url}/og.jpg`],
     creator: baseSiteConfig.creator,
   },
 }
