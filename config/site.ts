@@ -63,7 +63,7 @@ export const siteConfig: SiteConfig = {
     url: baseSiteConfig.url,
     title: baseSiteConfig.name,
     description: baseSiteConfig.description,
-    ogImage: [`${baseSiteConfig.url}/og.jpg`],
+    ogImage: `${baseSiteConfig.url}/og.jpg`,
     siteName: baseSiteConfig.name,
   },
   twitter: {
