@@ -73,4 +73,5 @@ export const siteConfig: SiteConfig = {
     images: [`${baseSiteConfig.url}/og.jpg`],
     creator: baseSiteConfig.creator,
   },
+  ogImage: `${baseSiteConfig.url}/og.jpg`
 }
