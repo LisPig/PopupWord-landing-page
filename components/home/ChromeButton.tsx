@@ -6,11 +6,11 @@ import { FaChrome } from 'react-icons/fa';
 
 const detectBrowserAndRedirect = (browserType: string) => {
   if (browserType.includes('chrome') && !browserType.includes('edg')) {
-    return 'https://chromewebstore.google.com/detail/volumecontroller/ffhombggbjfhchimojnmmghahleidfkk';
+    return 'https://chromewebstore.google.com/detail/popupword-web-%E5%BC%B9%E8%AF%8D/ajbpdbkffogndhmicjcdmdheejpfpkkf';
   } else if (browserType.includes('edg')) {
-    return 'https://microsoftedge.microsoft.com/addons/detail/cflpbdnbjkiekiijodcohpneonagejnd';
+    return 'https://microsoftedge.microsoft.com/addons/detail/gbnabibnfclihaoaihjekjbkfobpmllb';
   } else {
-    return 'http://localhost:3000/';
+    return 'https://www.popupword.com';
   }
 };
 
