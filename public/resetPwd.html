@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopupWord弹词 重置密码</title>
+    <style>
+        /* 添加CSS样式 */
+        .custom-button {
+            background-color: #3662e3;
+            /* 绿色背景 */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            /* 圆角 */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* 阴影 */
+        }
+
+        .custom-button:hover {
+            background-color: #0660ce;
+            /* 鼠标悬停时颜色加深 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>重置密码</h1>
+    <form id="resetPasswordForm" action="/reset-password" method="post">
+        <input type="hidden" name="token" value="">
+        <label for="newPassword">新密码:</label><br>
+        <input type="password" id="newPassword" name="newPassword"><br>
+        <label for="confirmPassword">确认密码:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br>
+        <button type="submit" class="custom-button">提交</button>
+        <div id="error" style="color: red;"></div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token');
+            document.querySelector('input[name="token"]').value = token;
+        });
+        document.getElementById('resetPasswordForm').onsubmit = function (event) {
+            event.preventDefault(); // 阻止表单默认提交行为
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const errorDiv = document.getElementById('error');
+
+            // 非空验证
+            if (!newPassword || !confirmPassword) {
+                errorDiv.textContent = '新密码和确认密码均不能为空。';
+                return;
+            }
+
+            // 一致性验证
+            if (newPassword !== confirmPassword) {
+                errorDiv.textContent = '两次输入的密码不一致，请重新输入。';
+                return;
+            }
+
+            // 基本格式验证：密码长度至少为6位
+            if (newPassword.length < 6) {
+                errorDiv.textContent = '密码长度至少为6位。';
+                return;
+            }
+
+            // 假设所有验证通过
+            // 这里应该使用AJAX进行提交，以下为伪代码
+            fetch('https://solooxy.com/popupword-server/reset-password-email', {
+                method: 'POST',
+                body: new FormData(this),
+            }).then(response => {
+                if (!response.ok) {
+                    throw new Error('服务器响应失败');
+                }
+                return response.text();
+            }).then(message => {
+                alert(message); // 正确信息或错误信息
+            }).catch(error => {
+                alert(error.message);
+            });
+        };
+    </script>
+</body>
+
+</html>

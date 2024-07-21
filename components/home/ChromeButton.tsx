@@ -8,7 +8,7 @@ const detectBrowserAndRedirect = (browserType: string) => {
   if (browserType.includes('chrome') && !browserType.includes('edg')) {
     return 'https://chromewebstore.google.com/detail/popupword-web-%E5%BC%B9%E8%AF%8D/ajbpdbkffogndhmicjcdmdheejpfpkkf';
   } else if (browserType.includes('edg')) {
-    return 'https://microsoftedge.microsoft.com/addons/detail/gbnabibnfclihaoaihjekjbkfobpmllb';
+    return 'https://microsoftedge.microsoft.com/addons/detail/popupwordweb-%E5%BC%B9%E8%AF%8D/gbnabibnfclihaoaihjekjbkfobpmllb';
   } else {
     return 'https://www.popupword.com';
   }
